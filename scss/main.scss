@@ -1,0 +1,22 @@
+@import"components/_reset.scss";
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+            max-width: 100%;
+            overflow-x: hidden;
+}
+
+.container{
+    width: 100wv;
+}
+@import "components/_variables.scss";
+@import "components/_button.scss";
+@import "components/_nav.scss";
+@import "components/_slider.scss";
+@import "components/_pictures.scss";
+@import "components/_price-boxes.scss";
+@import "components/_application.scss";
+@import "components/_form.scss";
+@import "components/_footer.scss";
+

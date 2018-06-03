@@ -1,0 +1,146 @@
+.price-row {
+    display: flex;
+    width: 80wv;
+    justify-content: center;
+    align-content: center;
+    background: #f9f9f9;
+/*     @include marginFiller(550px, #f9f9f9, 106.7%, 100%); */
+}
+
+.price-box {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 330px;
+    height: 500px;
+    margin-top: 80px;
+    border: 2px solid #C2C2C2;
+    margin: 25px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    &::before {
+        content: "";
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        border: 2px solid #C2C2C2;
+        position: absolute;
+        left: 50%;
+        top: 0%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+    }
+    &:after {
+        content: "";
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #C2C2C2;
+    }
+    h3 {
+        margin: 0 0 30px 0;
+        text-transform: uppercase;
+        align-self: center;
+        font-weight: 600;
+        font-size: 20px;
+        color: $color;
+    }
+
+    &::nth-of-type(odd){
+        margin: 25px 0 25px 0;
+    }
+}
+
+.price-option {
+    &:nth-of-type(even) {
+        background-color: #e3e3e3;
+    }
+    &:nth-of-type(odd) {
+        background: #f1f1f1;
+    }
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12px;
+        color: #9E96A4;
+    }
+}
+
+.price-cirlce {
+    height: 100px;
+    width: 100px;
+    border: 1px solid #C2C2C2;
+    border-radius: 50%;
+    align-self: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 900;
+    color: #C2C2C2;
+    text-align: center;
+    background: #fff;
+    .price-text {
+        margin-top: 16px;
+    }
+    sub {
+        vertical-align: text-top;
+        font-size: 10px;
+    }
+    span {
+        display: block;
+        text-transform: uppercase;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+}
+
+.price-btn {
+    align-self: center;
+    justify-content: center;
+    @include button (40px, 60%);
+    margin: 50px 0 0 0;
+}
+
+.price-box:nth-of-type(2) {
+    background: $color;
+    border: 2px solid $color;
+    h3{
+        color: #fff;
+    }
+    .price-btn {
+        margin: 90px 0 0 0;
+        background-color: #fff;
+        color: $color;
+    }
+    .price-option {
+        &:nth-of-type(even) {
+            background-color: #e3e3e3;
+        }
+        &:nth-of-type(odd) {
+            background: #fff;
+        }
+    }
+    &::before{
+        background: $color;
+        border: 2px solid $color;
+    }
+    &::after{
+        background: #fff;
+    }
+    .price-cirlce{
+        color: $color;
+    }
+}
+
+.price-box:nth-of-type(1) {
+    .price-btn {
+        margin: 130px 0 0 0;
+    }
+}

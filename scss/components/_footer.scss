@@ -1,0 +1,28 @@
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+     margin-top: 100px;
+    color: #777;
+    height: 80px;;
+}
+
+.weblinks {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 50px 0 150px;
+}
+
+
+.copyright {
+    font-size: 13px;
+    font-weight: 400;
+        margin: 0 5%;
+}
+
+.footer-logo {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 5%;
+}

@@ -1,0 +1,54 @@
+.pictures {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 30px 0;
+    flex-grow: 2;
+    div {
+        width: 330px;
+        height: 227px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 23px;
+        border: 1px solid #C2C2C2;
+        position: relative;
+        padding: 30px;
+        h2 {
+            font-weight: 900;
+            font-size: 20px;
+            background-color: rgba(white, 0.5);
+            @include underline();
+            span {
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.col1 {
+    background-image: url(../images/box2_img.jpg);
+    h2 {
+        padding: 26px;
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s all;
+    }
+}
+
+.col2 {
+    background-image: url(../images/box1_img.jpg);
+    h2 {
+        padding: 26px;
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s all;
+    }
+
+}
