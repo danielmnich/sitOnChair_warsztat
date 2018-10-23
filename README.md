@@ -1,2 +1,4 @@
 # sitOnChair_warsztat
-Warsztat z cięcia layotu
+Workshop made during CodersLab JavaScript:React bootcamp
+
+https://danielmnich.github.io/sitOnChair_warsztat/
